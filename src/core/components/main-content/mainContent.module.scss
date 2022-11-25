@@ -1,0 +1,32 @@
+.main-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 30rem;
+	width: 100%;
+	margin-top: -7rem;
+	gap: 1rem;
+	flex-grow: 1;
+
+	@media all and (max-width: 1313px) {
+		margin-top: 0;
+		width: 100%;
+		height: auto;
+		flex-direction: row;
+		align-items: stretch;
+		gap: 0;
+	}
+
+	@media all and (max-width: 600px) {
+		margin-top: 0;
+		width: 100%;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+
+	@media all and (max-width: 400px) {
+		margin-top: 0;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+}
