@@ -6,9 +6,9 @@ const PlayerList = ({ monthTitle, audioData }) => {
 	return (
 		<main className={styles.playerWrapper}>
 			{audioData.map((audio) => (
-				<article key={audio.audioFile}>
+				<article key={audio.audioFile} className={styles.playerArticle}>
 					<h2 className={styles.audioTitle}>{audio.audioTitle}</h2>
-					<AudioPlayer audioFile={audio.audioFile} />
+          <AudioPlayer audioFile={audio.audioFile} isFromSoundCloud={audio.isFromSoundCloud} />
 				</article>
 			))}
 		</main>

@@ -452,11 +452,13 @@ const getData = (language = "spanish") => {
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Episodio 1" : "Episode 1"}`,
-              audioFile: "/audio/audio2014/2014-01-04/XEDX1010_13-00.mp3",
+              audioFile: "https://soundcloud.com/tu-hora-divina/1-2014-01-04-temp-1-ep-1?si=ba5fedbc7902441abf650e14638929fe&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
               audioTitle: `${language === "spanish" ? "Episodio 2" : "Episode 2"}`,
-              audioFile: "/audio/audio2014/2014-01-11/XEDX1010_13-00.mp3",
+              audioFile: "https://soundcloud.com/tu-hora-divina/2-2014-01-11-temp-1-ep-2?si=bf22327313ff47eeb92be515f2c86326&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
               audioTitle: `${language === "spanish" ? "Episodio 3" : "Episode 3"}`,

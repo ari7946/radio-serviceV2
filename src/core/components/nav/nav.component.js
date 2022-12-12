@@ -18,25 +18,25 @@ const useIsDesktop = () => {
 };
 
 const NavBar = ({ handleYear }) => {
-	const [active, setActive] = useState('sixteen');
+	const [active, setActive] = useState('fourteen');
 	const isDesktop = useIsDesktop();
 
 	return (
 		<nav className={styles.mainMenu}>
-			<ul>
-				<li
+      <ul>
+        <li
 					onClick={() => {
-						handleYear('sixteen');
-						setActive('sixteen');
+						handleYear('fourteen');
+						setActive('fourteen');
 					}}
 					className={`
-            ${active === 'sixteen' ? styles.activeItem : ''}
+            ${active === 'fourteen' ? styles.activeItem : ''}
           `}
 				>
 					{isDesktop ? (
-						<a href='#temporada1'>Temporada 1</a>
+						<a>Temporada 1</a>
 					) : (
-						<a href='#temporada1'>Temp 1</a>
+						<a>Temp 1</a>
 					)}
 				</li>
 
@@ -50,25 +50,25 @@ const NavBar = ({ handleYear }) => {
           `}
 				>
 					{isDesktop ? (
-						<a href='#temporada2'>Temporada 2</a>
+						<a>Temporada 2</a>
 					) : (
-						<a href='#temporada2'>Temp 2</a>
+						<a>Temp 2</a>
 					)}
 				</li>
 
-				<li
+        <li
 					onClick={() => {
-						handleYear('fourteen');
-						setActive('fourteen');
+						handleYear('sixteen');
+						setActive('sixteen');
 					}}
 					className={`
-            ${active === 'fourteen' ? styles.activeItem : ''}
+            ${active === 'sixteen' ? styles.activeItem : ''}
           `}
 				>
 					{isDesktop ? (
-						<a href='#temporada3'>Temporada 3</a>
+						<a>Temporada 3</a>
 					) : (
-						<a href='#temporada3'>Temp 3</a>
+						<a>Temp 3</a>
 					)}
 				</li>
 			</ul>
