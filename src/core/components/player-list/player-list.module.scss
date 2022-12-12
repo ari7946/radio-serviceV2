@@ -4,6 +4,7 @@
 	margin: 0 auto;
 	width: 95%;
 	margin-left: 4rem;
+  flex-wrap: wrap;
 
 	@media all and (max-width: 1313px) {
 		flex-direction: column;

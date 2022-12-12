@@ -44,7 +44,7 @@ const getData = (language = "spanish") => {
             {
               audioTitle: `${language === "spanish" ? "Episodio 1" : "Episode 1"}`,
               audioFile:
-                "https://soundcloud.com/ari-mercado-440346810/02-01-2016a?si=3607de3bb27b49c3b100bb1eac502dd9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+                "https://soundcloud.com/tu-hora-divina/11-2014-03-15-temp-1-ep-11?si=e5bc6be8fe3447569804cb5dc3083ac0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
             },
             {
               audioTitle: `${language === "spanish" ? "Episodio 2" : "Episode 2"}`,
