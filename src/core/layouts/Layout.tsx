@@ -9,12 +9,12 @@ import {getData, useData} from '../components/data/data';
 
 const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({ title, children }) => {
   const data = getData('spanish');
-  
-  const initialAudioData = data.sixteen.monthsData.enero.audioData;
-  const initialAllMonths = data.sixteen.allMonths;
-  const initialYearTitle = data.sixteen.yearTitle;
-  const initialMonthTitle = data.sixteen.monthsData.enero.monthTitle;
-  const initialYear = data.sixteen.year;
+
+  const initialAudioData = data.fourteen.monthsData.enero.audioData;
+  const initialAllMonths = data.fourteen.allMonths;
+  const initialYearTitle = data.fourteen.yearTitle;
+  const initialMonthTitle = data.fourteen.monthsData.enero.monthTitle;
+  const initialYear = data.fourteen.year;
 
   const [yearTitle, setYearTitle] = useState(initialYearTitle);
   const [allMonths, setAllMonths] = useState(initialAllMonths);
@@ -32,9 +32,9 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({ t
   const handleYear = (yearSelected) => {
     const { yearTitle, year, allMonths, monthsData } = data[yearSelected];
 
-    // 2016 and 2016 both begin in Janurary, while 2015 begins in July. 
-    // (according to the data available, obviously not on an actual calendar) 
-    const { monthTitle, audioData } = 
+    // 2016 and 2016 both begin in Janurary, while 2015 begins in July.
+    // (according to the data available, obviously not on an actual calendar)
+    const { monthTitle, audioData } =
       yearSelected === 'fifteen' ? monthsData.julio : monthsData.enero;
 
     setAllMonths(allMonths);
@@ -49,10 +49,10 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({ t
         <title>{title || "Tu Hora Divina"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header 
+      <Header
         handleYear={handleYear}
       />
-      <MainContent 
+      <MainContent
         allMonths={allMonths}
         yearTitle={yearTitle}
         audioData={audioData}
@@ -63,7 +63,7 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({ t
       />
         {children}
        <Footer />
-    </div> 
+    </div>
   )
 }
 

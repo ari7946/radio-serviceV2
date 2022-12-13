@@ -1,18 +1,17 @@
 .months-wrapper {
 	display: flex;
-	gap: 2rem;
+	gap: 3rem;
 	height: auto;
 	min-width: 12rem;
 	margin: 0 4.5rem;
   height: auto;
   flex-direction: column;
-  margin: 0 auto;
-  margin-top: 3rem;
+  margin: 3rem auto;
 
 	@media all and (max-width: 800px) {
 		flex-direction: column;
 		min-width: 8rem;
     gap: 2rem;
-    margin-top: 1rem;
+    margin: 1rem auto;
 	}
 }
