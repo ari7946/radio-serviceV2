@@ -534,20 +534,24 @@ const getData = (language = "spanish") => {
           monthTitle: "Abril 2014",
           audioData: [
             {
-              audioTitle: `${language === "spanish" ? "Episodio 1" : "Episode 1"}`,
-              audioFile: "/audio/audio2014/2014-04-05/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 14" : "Episode 14"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/14-2014-04-05-temp-2-ep-14?si=6c10f3e3bb1c44bc95b7a20845eadbf7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 2" : "Episode 2"}`,
-              audioFile: "/audio/audio2014/2014-04-12/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 15" : "Episode 15"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/15-2014-04-12-temp-2-ep-15?si=bbdfec50ca9f4f158b7db683be588fcf&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 3" : "Episode 3"}`,
-              audioFile: "/audio/audio2014/2014-04-19/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 16" : "Episode 16"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/16-2014-04-19-temp-2-ep-16?si=67e24ec1f9fd4638a7a00a94e14dea45&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 4" : "Episode 4"}`,
-              audioFile: "/audio/audio2014/2014-04-26/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 17" : "Episode 17"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/17-2014-04-26-temp-2-ep-17?si=358280cbe2384ad38782587ada75f197&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
           ],
         },
