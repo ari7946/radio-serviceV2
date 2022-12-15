@@ -503,20 +503,29 @@ const getData = (language = "spanish") => {
           monthTitle: "Marzo 2014",
           audioData: [
             {
-              audioTitle: `${language === "spanish" ? "Episodio 1" : "Episode 1"}`,
-              audioFile: "/audio/audio2014/2014-03-01/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 9" : "Episode 9"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/xedx1010-13-5?si=7a462b8bb46c47b484b7473b32f4fd39&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 2" : "Episode 2"}`,
-              audioFile: "/audio/audio2014/2014-03-08/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 10" : "Episode 10"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/xedx1010-13-6?si=50598d512a3f49258b0a463e355ecf5f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 3" : "Episode 3"}`,
-              audioFile: "/audio/audio2014/2014-03-15/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 11" : "Episode 11"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/11-2014-03-15-temp-1-ep-11?si=4fc06f67a5ac4a6894da8e2e8a467116&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 4" : "Episode 4"}`,
-              audioFile: "/audio/audio2014/2014-03-22/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 12" : "Episode 12"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/xedx1010-13-00?si=c794a449a4ea4211a9f7c8ed6386abd5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
+            },
+            {
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 13" : "Episode 13"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/13-2014-03-29-temp-2-ep-13?si=6b563f2448744e21947876c222ebd44f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
           ],
         },
