@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from './podcast-list.module.scss';
-import Image from 'next/image';
 import Link from 'next/link';
 
 
 export default function PodcastList() {
   return (
     <div className={styles.wrapper}>
-      <h2 className={styles.subheading}>Escucha Aqui, o en:</h2>
+      <h2 className={styles.subheading}>Escúchalo Aquí, o En:</h2>
       <ul className={styles.podcastList}>
         <li>
           <div>

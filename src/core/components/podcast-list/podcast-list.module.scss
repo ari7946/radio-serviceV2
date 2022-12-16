@@ -10,11 +10,16 @@
 
   .subheading {
     margin-right: .7rem;
+    text-shadow: 2px 2px 5px #FFFEE1;
     @media all and (max-width: 930px) {
       margin-top: 3rem;
       width: 100%;
       text-align: center;
       margin-right: 0;
+    }
+
+    @media all and (max-width: 800px) {
+      font-size: 20px;
     }
 
     @media all and (max-width: 500px) {

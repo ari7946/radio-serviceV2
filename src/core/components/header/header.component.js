@@ -7,7 +7,7 @@ const Header = ({ handleYear }) => {
   return (
     <header className={styles.header}>
       <div className={styles.topContainer}>
-        <h1 className={styles.headerTitle}>Radio Tu Hora Divina</h1>
+        <h1 className={styles.headerTitle}>Tu Hora Divina</h1>
         <PodcastList />
       </div>
       <Nav handleYear={handleYear} />
