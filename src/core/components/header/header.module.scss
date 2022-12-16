@@ -12,8 +12,13 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 25rem;
+	min-height: 25rem;
 	width: 100%;
+
+  .top-container {
+    // display: flex;
+    // justify-content: space-between;
+  }
 
 	@media all and (max-width: 1313px) {
 		height: 20rem;
