@@ -588,6 +588,7 @@ const getData = (language = "spanish") => {
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 22" : "Season 1 - Ep. 22"}`,
               audioFile: "https://soundcloud.com/tu-hora-divina/22-2014-06-07-temp-3-ep-2?si=bae8bed90be946968d960e911b1aa0a4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
           ],
         },
@@ -598,6 +599,7 @@ const getData = (language = "spanish") => {
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 23" : "Season 1 - Ep. 23"}`,
               audioFile: "https://soundcloud.com/tu-hora-divina/22-2014-06-07-temp-3-ep-3?si=753e601dd5f149feba49dee8822583c1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
           ],
         },
@@ -608,22 +610,27 @@ const getData = (language = "spanish") => {
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 24" : "Season 1 - Ep. 24"}`,
               audioFile: "https://soundcloud.com/tu-hora-divina/24-2014-08-02-temp-3-ep-4?si=f88682b5804643b99cc980d24aacacd0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 25" : "Season 1 - Ep. 25"}`,
               audioFile: "https://soundcloud.com/tu-hora-divina/25-2014-08-09-temp-3-ep-5?si=fee2ac583fb7411fa2a2dc556187c406&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 26" : "Season 1 - Ep. 26"}`,
               audioFile: "https://soundcloud.com/tu-hora-divina/26-2014-08-16-temp-2-ep-6?si=52995823f3714225be9f5d5a1569c074&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 27" : "Season 1 - Ep. 27"}`,
               audioFile: "https://soundcloud.com/tu-hora-divina/27-2014-08-23-temp-2-ep-7?si=282255bb93f54ce59dde6a6daa56c5f5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 28" : "Season 1 - Ep. 28"}`,
               audioFile: "https://soundcloud.com/tu-hora-divina/28-2014-08-30-temp-2-ep-8?si=6090422bcd18467c9b5e2a2c6ad6fabe&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
           ],
         },
@@ -634,10 +641,12 @@ const getData = (language = "spanish") => {
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 29" : "Season 1 - Ep. 29"}`,
               audioFile: "https://soundcloud.com/tu-hora-divina/29-2014-09-06-temp-2-ep-9?si=28bba8e3f38943b58af6934339e355e5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 30" : "Season 1 - Ep. 30"}`,
               audioFile: "https://soundcloud.com/tu-hora-divina/30-2014-09-20-temp-2-ep-10?si=24459afd546545718dfb9d4179d58f9a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
           ],
         },
@@ -646,20 +655,24 @@ const getData = (language = "spanish") => {
           monthTitle: "Octubre 2014",
           audioData: [
             {
-              audioTitle: `${language === "spanish" ? "Episodio 1" : "Episode 1"}`,
-              audioFile: "/audio/audio2014/2014-10-04/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 31" : "Season 1 - Ep. 31"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/30-2014-10-04-temp-1-octubre-1?si=9a52bf245ff44119ab269105e7593301&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 2" : "Episode 2"}`,
-              audioFile: "/audio/audio2014/2014-10-11/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 32" : "Season 1 - Ep. 32"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/32-2014-10-11-temp-1-octubre-1?si=8e047f8f80ad4a58bbd92d3a83eba7d5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 3" : "Episode 3"}`,
-              audioFile: "/audio/audio2014/2014-10-18/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 33" : "Season 1 - Ep. 33"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/33-2014-10-18-temp-1-octubre-3?si=f64ce2a5d5e4449f80e4d598b7a27f81&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 4" : "Episode 4"}`,
-              audioFile: "/audio/audio2014/2014-10-25/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 34" : "Season 1 - Ep. 34"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/34-2014-10-25-temp-1-octubre-4?si=b34ede7d070c43b5a33ff3732e0bc01b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
           ],
         },
@@ -668,20 +681,29 @@ const getData = (language = "spanish") => {
           monthTitle: "Noviembre 2014",
           audioData: [
             {
-              audioTitle: `${language === "spanish" ? "Episodio 1" : "Episode 1"}`,
-              audioFile: "/audio/audio2014/2014-11-01/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 35" : "Season 1 - Ep. 35"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/35-2014-11-01-temp-1-noviembre-1?si=cafc2220413b47e5b57d0e7bf7defbc4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 2" : "Episode 2"}`,
-              audioFile: "/audio/audio2014/2014-11-08/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 36" : "Season 1 - Ep. 36"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/36-2014-11-08-temp-1-noviembre-2?si=9b7b2132408742469154886c551266bb&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 3" : "Episode 3"}`,
-              audioFile: "/audio/audio2014/2014-11-15/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 37" : "Season 1 - Ep. 37"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/37-2014-11-15-temp-1-noviembre-3?si=a83c0d8b71694c9ca6971321ce8be57e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
             {
-              audioTitle: `${language === "spanish" ? "Episodio 4" : "Episode 4"}`,
-              audioFile: "/audio/audio2014/2014-11-22/XEDX1010_13-00.mp3",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 38" : "Season 1 - Ep. 38"}`,
+              audioFile: "/https://soundcloud.com/tu-hora-divina/38-2014-11-22-temp-1-noviembre-4?si=5eec66c9b18d4d5b8133821cfdfec4d8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
+            },
+            {
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 39" : "Season 1 - Ep. 39"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/39-2014-11-29-temp-1-noviembre-5?si=edc97ccdb1e648978248f9cd0b115193&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
           ],
         },
@@ -691,7 +713,8 @@ const getData = (language = "spanish") => {
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Episodio 1" : "Episode 1"}`,
-              audioFile: "/audio/audio2014/2014-12-06/XEDX1010_13-00.mp3",
+              audioFile: "https://soundcloud.com/tu-hora-divina/39-2014-11-29-temp-1-noviembre-5?si=edc97ccdb1e648978248f9cd0b115193&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              isFromSoundCloud: true
             },
           ],
         },
