@@ -44,19 +44,20 @@ const NavBar = ({ handleYear }) => {
 					onClick={() => {
 						handleYear('fifteen');
 						setActive('fifteen');
-					}}
+          }}
+
 					className={`
             ${active === 'fifteen' ? styles.activeItem : ''}
           `}
 				>
 					{isDesktop ? (
-						<a>Temporada 2</a>
+						<a>Temporada 2 <span className={styles.pronto}> (llegará pronto)</span></a>
 					) : (
-						<a>Temp 2</a>
+						<a>Temp 2<span className={styles.pronto}> (llegará pronto)</span></a>
 					)}
 				</li>
 
-        <li
+        {/* <li
 					onClick={() => {
 						handleYear('sixteen');
 						setActive('sixteen');
@@ -70,7 +71,7 @@ const NavBar = ({ handleYear }) => {
 					) : (
 						<a>Temp 3</a>
 					)}
-				</li>
+				</li> */}
 			</ul>
 		</nav>
 	);
