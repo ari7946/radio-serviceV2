@@ -697,7 +697,7 @@ const getData = (language = "spanish") => {
             },
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 38" : "Season 1 - Ep. 38"}`,
-              audioFile: "/https://soundcloud.com/tu-hora-divina/38-2014-11-22-temp-1-noviembre-4?si=5eec66c9b18d4d5b8133821cfdfec4d8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              audioFile: "https://soundcloud.com/tu-hora-divina/38-2014-11-22-temp-1-noviembre-4?si=5eec66c9b18d4d5b8133821cfdfec4d8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
               isFromSoundCloud: true
             },
             {
@@ -712,8 +712,8 @@ const getData = (language = "spanish") => {
           monthTitle: "Diciembre 2014",
           audioData: [
             {
-              audioTitle: `${language === "spanish" ? "Episodio 1" : "Episode 1"}`,
-              audioFile: "https://soundcloud.com/tu-hora-divina/39-2014-11-29-temp-1-noviembre-5?si=edc97ccdb1e648978248f9cd0b115193&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+              audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 40" : "Season 1 - Ep. 40"}`,
+              audioFile: "https://soundcloud.com/tu-hora-divina/40-2014-12-06-temp-1-deciembre-5?si=85cc954457ab4bc897c4252106645c54&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
               isFromSoundCloud: true
             },
           ],
