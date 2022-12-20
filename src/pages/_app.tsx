@@ -3,6 +3,8 @@ import {AuthenticationError, AuthorizationError} from "blitz"
 import React from "react"
 import { withBlitz } from "src/blitz-client"
 import '../styles/global.scss';
+import { Analytics } from '@vercel/analytics/react';
+
 
 function RootErrorFallback({error}: ErrorFallbackProps) {
   if (error instanceof AuthenticationError) {
@@ -29,6 +31,7 @@ function MyApp({Component, pageProps}: AppProps) {
   return (
     <ErrorBoundary FallbackComponent={RootErrorFallback}>
       {getLayout(<Component {...pageProps} />)}
+      <Analytics />
     </ErrorBoundary>
   )
 }
