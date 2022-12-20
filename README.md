@@ -2,29 +2,28 @@
 
 ## Note: This is the updated version from the original [project](https://github.com/ari7946/radio-service). I'm gradually updating and building this project (including this readme).
 
-This is a website for the a client's Spanish Radio Talk show and podcast station. Podcasts can be listened to here or on other podcast platforms.
+This is a website for the a client's Spanish Radio Talk show and podcast station. Podcasts can be listened to on the website or on other podcast platforms.
 
 [Open deployed site](https://www.tuhoradivina.com/)
 
 #### Desktop View
-<img src="https://i.ibb.co/jfSFKXn/desktop-radio.png" width="3000" height="600" />
+<img src="https://i.ibb.co/x7xjyhx/divina-desktop.png" width="900" height="600" />
 
 #### Tablet View
-<img src="https://i.ibb.co/3vnmhR3/tablet-radio.png" width="700" height="600" />
+<img src="https://i.ibb.co/DYjqRyb/divina-tablet.png" width="900" height="600" />
 
 #### Mobile View
-<img src="https://i.ibb.co/Jc9dvfd/phone-radio.png" width="400" height="600" />
+<img src="https://i.ibb.co/X8nWVMm/divina-phone.png" width="900" height="600" />
 
 ## Tech Stack
 
 #### Frontend Built Using:
 
 - React
-- Dependencies:
-    - [react](https://reactjs.org/docs/getting-started.html)
-    - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
-    - [node-sass](https://github.com/sass/node-sass)
-    - [react-audio-player](https://www.npmjs.com/package/react-audio-player)
+- NextJS
+- BlitzJS (NextJS fullstack toolkit)
+- SASS & CSS modules
+- React Player(npm package) as wrapper for embedded Soundcloud player. This enables user triggered event methods
 
 #### Using the Application
 
@@ -36,7 +35,7 @@ Follow these steps:
 
 1. Fork and clone repo
 
-2. In the terminal, `cd` into 'tuhoradivina'
+2. In the terminal, `cd` into 'radio-serviceV2'
 
 3. Run `yarn` or `npm install` to install the necessary node_modules on the frontend.
 
