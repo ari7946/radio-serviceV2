@@ -48,6 +48,8 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({ t
       <Head>
         <title>{title || "Tu Hora Divina"}</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Escucha al pastor hablar sobre la vida, la biblia y Jesucristo." />
       </Head>
       <Header
         handleYear={handleYear}
