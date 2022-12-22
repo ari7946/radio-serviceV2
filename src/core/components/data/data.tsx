@@ -448,7 +448,7 @@ const getData = (language = "spanish") => {
       monthsData: {
         // ************** Enero 2014
         enero: {
-          monthTitle: "Enero 2014",
+          monthTitle: "Enero",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 1" : "Episode 1"}`,
@@ -474,7 +474,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Febrero 2014
         febrero: {
-          monthTitle: "Febrero 2014",
+          monthTitle: "Febrero",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 5" : "Episode 5"}`,
@@ -500,7 +500,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Marzo 2014
         marzo: {
-          monthTitle: "Marzo 2014",
+          monthTitle: "Marzo",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 9" : "Episode 9"}`,
@@ -531,7 +531,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Abril 2014
         abril: {
-          monthTitle: "Abril 2014",
+          monthTitle: "Abril",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 14" : "Episode 14"}`,
@@ -557,7 +557,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Mayo 2014
         mayo: {
-          monthTitle: "Mayo 2014",
+          monthTitle: "Mayo",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 18" : "Episode 18"}`,
@@ -583,7 +583,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Junio 2014
         junio: {
-          monthTitle: "Junio 2014",
+          monthTitle: "Junio",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 22" : "Season 1 - Ep. 22"}`,
@@ -594,7 +594,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Julio 2014
         julio: {
-          monthTitle: "Julio 2014",
+          monthTitle: "Julio",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 23" : "Season 1 - Ep. 23"}`,
@@ -605,7 +605,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Agosto 2014
         agosto: {
-          monthTitle: "Agosto 2014",
+          monthTitle: "Agosto",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 24" : "Season 1 - Ep. 24"}`,
@@ -636,7 +636,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Septiembre 2014
         septiembre: {
-          monthTitle: "Septiembre 2014",
+          monthTitle: "Septiembre",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 29" : "Season 1 - Ep. 29"}`,
@@ -652,7 +652,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Octubre 2014
         octubre: {
-          monthTitle: "Octubre 2014",
+          monthTitle: "Octubre",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 31" : "Season 1 - Ep. 31"}`,
@@ -678,7 +678,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Noviembre 2014
         noviembre: {
-          monthTitle: "Noviembre 2014",
+          monthTitle: "Noviembre",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 35" : "Season 1 - Ep. 35"}`,
@@ -709,7 +709,7 @@ const getData = (language = "spanish") => {
         },
         // ************** Diciembre 2014
         diciembre: {
-          monthTitle: "Diciembre 2014",
+          monthTitle: "Diciembre",
           audioData: [
             {
               audioTitle: `${language === "spanish" ? "Temp. 1 - Ep. 40" : "Season 1 - Ep. 40"}`,
