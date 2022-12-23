@@ -47,29 +47,36 @@ const MainContent = ({
 
 	return (
 		<section className={styles.mainWrapper}>
-			{firstHalf.length && (
-				<MonthList
-					allMonths={firstHalf}
-					yearTitle={yearTitle}
-					handleMonth={handleMonth}
-					year={year}
-					handleActiveMonth={handleActiveMonth}
-					activeMonth={activeMonth}
-				/>
-			)}
+      <div className={styles.monthListWrapper}>
+        {firstHalf.length && (
+          <MonthList
+            allMonths={firstHalf}
+            yearTitle={yearTitle}
+            handleMonth={handleMonth}
+            year={year}
+            handleActiveMonth={handleActiveMonth}
+            activeMonth={activeMonth}
+          />
+        )}
 
-			{secondHalf && (
-				<MonthList
-					allMonths={secondHalf}
-					yearTitle={yearTitle}
-					handleMonth={handleMonth}
-					year={year}
-					handleActiveMonth={handleActiveMonth}
-					activeMonth={activeMonth}
-				/>
-			)}
+        {secondHalf && (
+          <MonthList
+            allMonths={secondHalf}
+            yearTitle={yearTitle}
+            handleMonth={handleMonth}
+            year={year}
+            handleActiveMonth={handleActiveMonth}
+            activeMonth={activeMonth}
+          />
+        )}
+      </div>
 
-			<PlayerList monthTitle={monthTitle} audioData={audioData} />
+      <div className={styles.playerListWrapper}>
+        <PlayerList
+          monthTitle={monthTitle}
+          audioData={audioData}
+        />
+      </div>
 		</section>
 	);
 };

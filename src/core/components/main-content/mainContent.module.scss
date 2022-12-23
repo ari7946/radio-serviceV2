@@ -2,22 +2,36 @@
 	display: flex;
 	min-height: 30rem;
 	width: 100%;
-	gap: 1rem;
-	flex-grow: 1;
-
+	gap: 3rem;
   margin-top: 1rem;
-  // margin-top: 4rem;
   width: 100%;
   height: auto;
   flex-direction: row;
   align-items: stretch;
   gap: 0;
+  margin-left: 2.5rem;
+
+  .player-list-wrapper {
+    flex-grow: 3;
+    padding-inline: 5rem;
+
+    @media all and (max-width: 930px) {
+      padding-inline: 0;
+	  }
+  }
+
+  .month-list-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 2;
+  }
 
 	@media all and (max-width: 930px) {
 		margin-top: 6rem;
 		width: 100%;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
+    margin-left: 0;
 	}
 
 	@media all and (max-width: 500px) {
@@ -26,3 +40,4 @@
 		justify-content: space-evenly;
 	}
 }
+
