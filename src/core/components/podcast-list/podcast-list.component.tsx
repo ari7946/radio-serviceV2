@@ -21,7 +21,7 @@ export default function PodcastList() {
           <div>
             <Link href="https://podcasts.apple.com/us/podcast/tu-hora-divina/id1659299472">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/apple-podcast.svg" width="150" height="38" alt="Escúchalo en Apple Podcasts"/>
+              <img src="/images/apple-podcast.svg" width="140" height="38" alt="Escúchalo en Apple Podcasts"/>
             </Link>
           </div>
         </li>
@@ -30,7 +30,7 @@ export default function PodcastList() {
           <div>
             <Link href="https://open.spotify.com/show/68i6aFTTVXB9c1afxfsHcx?si=6378bb51ba5d4bf6">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/spotify-podcast.svg" width="150" height="38" alt="Escúchalo en Spotify"/>
+              <img src="/images/spotify-podcast.svg" width="140" height="38" alt="Escúchalo en Spotify"/>
             </Link>
           </div>
         </li>
@@ -48,7 +48,7 @@ export default function PodcastList() {
           <div>
             <Link href="https://castbox.fm/channel/id5241199?country=mx">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/castbox-podcast.svg" width="150" height="38" alt="Escúchalo en Castbox"/>
+              <img src="/images/castbox-podcast.svg" width="140" height="38" alt="Escúchalo en Castbox"/>
             </Link>
           </div>
         </li>
