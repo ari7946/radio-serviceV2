@@ -1,6 +1,22 @@
-import React from "react"
+import React from "react";
 
-const getData = (language = "spanish") => {
+interface Month {
+  monthTitle: string,
+  audioData: {
+    audioTitle: string,
+    audioFile: string,
+    isFromSoundCloud?: boolean
+  }[]
+}
+interface Year {
+    yearTitle: string,
+    year: string,
+    allMonths: string[],
+    monthsData: Record<string, Month>
+}
+
+
+const getData = (language = "spanish"): Record<string, Year> => {
   return {
     // // ********* 2016 *************************************************
     // sixteen: {
