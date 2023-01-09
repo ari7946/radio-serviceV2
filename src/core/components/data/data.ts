@@ -1,6 +1,4 @@
-import React from "react";
-
-interface Month {
+export interface Month {
   monthTitle: string,
   audioData: {
     audioTitle: string,
@@ -8,7 +6,7 @@ interface Month {
     isFromSoundCloud?: boolean
   }[]
 }
-interface Year {
+export interface Year {
     yearTitle: string,
     year: string,
     allMonths: string[],
@@ -739,14 +737,14 @@ const getData = (language = "spanish"): Record<string, Year> => {
   }
 }
 
-const useData = () => {
-  const [language, setLanguage] = React.useState("spanish")
+// const useData = () => {
+//   const [language, setLanguage] = React.useState("spanish")
 
-  const handleLanguage = (lang) => {
-    setLanguage(lang)
-  }
+//   const handleLanguage = (lang) => {
+//     setLanguage(lang)
+//   }
 
-  return [language, handleLanguage]
-}
+//   return [language, handleLanguage]
+// }
 
-export { getData, useData }
+export { getData }
