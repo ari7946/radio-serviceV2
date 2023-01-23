@@ -8,33 +8,33 @@ import MainContent from '../components/main-content/main-content.component';
 import styles from './layout.module.scss';
 import { getData } from '../components/data/data';
 import { useRouter } from 'next/router';
-import { Month, Year} from '../components/data/data'
+import { AudioData } from '../types/types'
 
 const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({ title, children }) => {
   const data = getData('spanish');
   const router = useRouter();
 
 
-  const initialAudioData = data?.fourteen?.monthsData?.enero?.audioData;
-  const initialAllMonths = data?.fourteen?.allMonths;
-  const initialYearTitle = data?.fourteen?.yearTitle;
-  const initialMonthTitle = data?.fourteen?.monthsData?.enero?.monthTitle;
-  const initialYear = data?.fourteen?.year || 'fourteen';
+  const initialAudioData = data?.fourteen?.monthsData?.enero?.audioData as AudioData[];
+  const initialAllMonths = data?.fourteen?.allMonths as string[];
+  const initialYearTitle = data?.fourteen?.yearTitle as string;
+  const initialMonthTitle = data?.fourteen?.monthsData?.enero?.monthTitle as string;
+  const initialYear = data?.fourteen?.year as string || 'fourteen';
 
-  const [yearTitle, setYearTitle] = useState(initialYearTitle);
-  const [allMonths, setAllMonths] = useState(initialAllMonths);
-  const [audioData, setAudioData] = useState(initialAudioData);
-  const [monthTitle, setMonthTitle] = useState(initialMonthTitle);
-  const [year, setYear] = useState(initialYear);
+  const [yearTitle, setYearTitle] = useState<string>(initialYearTitle);
+  const [allMonths, setAllMonths] = useState<string[]>(initialAllMonths);
+  const [audioData, setAudioData] = useState<AudioData[]>(initialAudioData);
+  const [monthTitle, setMonthTitle] = useState<string>(initialMonthTitle);
+  const [year, setYear] = useState<string>(initialYear);
 
-  const handleMonth = (month) => {
+  const handleMonth = (month: string) => {
     const monthData = data[year]?.monthsData[month];
     const { monthTitle, audioData } = monthData ?? {};
-    setMonthTitle(monthTitle);
-    setAudioData(audioData);
+    setMonthTitle(monthTitle as string);
+    setAudioData(audioData as AudioData[]);
   }
 
-  const handleYear = async (yearSelected) => {
+  const handleYear = async (yearSelected: string) => {
     const { yearTitle, year = '', allMonths, monthsData } = await data[yearSelected] ?? {};
 
     // 2016 and 2016 both begin in Janurary, while 2015 begins in July.
@@ -42,8 +42,8 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({ t
     const { monthTitle = '', audioData }: any =
       yearSelected === 'fifteen' ? monthsData?.julio : monthsData?.enero;
 
-    setAllMonths((_) => allMonths);
-    setYearTitle((_) => yearTitle);
+    setAllMonths((_) => allMonths as string[]);
+    setYearTitle((_) => yearTitle as string);
     setYear((_) => year);
     setMonthTitle((_) => monthTitle);
     setAudioData((_) => audioData);

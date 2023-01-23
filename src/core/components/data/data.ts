@@ -1,17 +1,4 @@
-export interface Month {
-  monthTitle: string,
-  audioData: {
-    audioTitle: string,
-    audioFile: string,
-    isFromSoundCloud?: boolean
-  }[]
-}
-export interface Year {
-  yearTitle: string,
-  year: string,
-  allMonths: string[],
-  monthsData: Record<string, Month>
-}
+import { Year } from '../../types/types'
 
 const getData = (language = "spanish"): Record<string, Year> => {
   return {
