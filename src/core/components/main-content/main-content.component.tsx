@@ -2,19 +2,27 @@ import React, { useState, useEffect } from 'react';
 import MonthList from '../month-list/month-list.component';
 import PlayerList from '../player-list/player-list.component';
 import styles from './mainContent.module.scss';
+import { AudioData } from 'src/core/types/types';
+
+interface MainContentProps {
+  allMonths: string[];
+  yearTitle: string;
+  audioData: AudioData[];
+  monthTitle: string;
+  handleMonth: (month: string) => unknown;
+  year: string
+}
 
 const MainContent = ({
 	allMonths,
-	yearTitle,
 	audioData,
 	monthTitle,
 	handleMonth,
 	year,
-	handleYear,
-}) => {
-	const [activeMonthSixteen, setActiveMonthSixteen] = useState('enero');
-	const [activeMonthFifteen, setActiveMonthFifteen] = useState('julio');
-	const [activeMonthFourteen, setActiveMonthFourteen] = useState('enero');
+} : MainContentProps) => {
+	const [activeMonthSixteen, setActiveMonthSixteen] = useState<string | undefined>('enero');
+	const [activeMonthFifteen, setActiveMonthFifteen] = useState<string | undefined>('julio');
+	const [activeMonthFourteen, setActiveMonthFourteen] = useState<string | undefined>('enero');
 
 	const firstHalf = allMonths.slice(0, 6);
 	const secondHalf =
@@ -31,7 +39,7 @@ const MainContent = ({
 		activeMonth = '';
 	}
 
-	const handleActiveMonth = (month, currentYear) => {
+	const handleActiveMonth = (month?: string, currentYear?: string) => {
 		if (currentYear === 'sixteen') {
 			setActiveMonthSixteen(month);
 		} else if (currentYear === 'fifteen') {
@@ -51,7 +59,6 @@ const MainContent = ({
         {firstHalf.length && (
           <MonthList
             allMonths={firstHalf}
-            yearTitle={yearTitle}
             handleMonth={handleMonth}
             year={year}
             handleActiveMonth={handleActiveMonth}
@@ -62,7 +69,6 @@ const MainContent = ({
         {secondHalf && (
           <MonthList
             allMonths={secondHalf}
-            yearTitle={yearTitle}
             handleMonth={handleMonth}
             year={year}
             handleActiveMonth={handleActiveMonth}
