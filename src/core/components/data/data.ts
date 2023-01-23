@@ -7,12 +7,11 @@ export interface Month {
   }[]
 }
 export interface Year {
-    yearTitle: string,
-    year: string,
-    allMonths: string[],
-    monthsData: Record<string, Month>
+  yearTitle: string,
+  year: string,
+  allMonths: string[],
+  monthsData: Record<string, Month>
 }
-
 
 const getData = (language = "spanish"): Record<string, Year> => {
   return {
