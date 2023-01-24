@@ -1,8 +1,13 @@
 import React from 'react';
 import AudioPlayer from './player.component';
 import styles from './player-list.module.scss';
+import { AudioData } from '../../types/types';
 
-const PlayerList = ({ monthTitle, audioData }) => {
+interface PlayerListProps {
+  audioData: AudioData[];
+}
+
+const PlayerList = ({ audioData } : PlayerListProps) => {
 	return (
 		<main className={styles.playerWrapper}>
 			{audioData.map((audio) => (

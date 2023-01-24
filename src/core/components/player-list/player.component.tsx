@@ -2,9 +2,14 @@ import React, { useState } from "react"
 // import ReactAudioPlayer from "react-audio-player"
 import ReactPlayer from "react-player/lazy"
 import styles from "./player-list.module.scss"
-import Spotify  from "react-spotify-embed";
+import { AudioData } from "src/core/types/types"
 
-const AudioPlayer = ({ audioFile, audioData, isFromSoundCloud }) => {
+interface AudioPlayerProps {
+  audioFile: string,
+  isFromSoundCloud: boolean | undefined,
+}
+
+const AudioPlayer = ({ audioFile, isFromSoundCloud } : AudioPlayerProps) => {
   const [loading, setLoading] = useState(true);
 
   const handleOnCanPlay = () => {
