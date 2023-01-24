@@ -12,10 +12,6 @@ interface AudioPlayerProps {
 const AudioPlayer = ({ audioFile, isFromSoundCloud } : AudioPlayerProps) => {
   const [loading, setLoading] = useState(true);
 
-  const handleOnCanPlay = () => {
-    setLoading(false)
-  }
-
   React.useEffect(() => {
     setLoading(false);
   }, [loading])
@@ -37,7 +33,6 @@ const AudioPlayer = ({ audioFile, isFromSoundCloud } : AudioPlayerProps) => {
           url={audioFile}
           className={styles.audioPlayer}
           controls
-          // onReady={handleOnCanPlay}
           height={isFromSoundCloud ? 130 : 100}
           width="100%"
         />

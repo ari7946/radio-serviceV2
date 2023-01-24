@@ -79,7 +79,6 @@ const MainContent = ({
 
       <div className={styles.playerListWrapper}>
         <PlayerList
-          monthTitle={monthTitle}
           audioData={audioData}
         />
       </div>
