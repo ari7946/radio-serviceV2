@@ -20,5 +20,5 @@
     "tsBuildInfoFile": ".tsbuildinfo"
   },
   "exclude": ["node_modules", "**/*.e2e.ts", "cypress"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types", "src/core/components/nav/nav.component.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types", "src/core/components/nav/nav.component.tsx"]
 }

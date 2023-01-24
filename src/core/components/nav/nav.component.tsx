@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import styles from './nav.module.scss';
 
-const useIsDesktop = () => {
-	const [isDesktop, setDesktop] = useState(true);
+const useIsDesktop = (): boolean => {
+	const [isDesktop, setDesktop] = useState<boolean>(true);
 
 	const updateMedia = useCallback(() => {
 		setDesktop(window.innerWidth > 845);
@@ -17,8 +17,12 @@ const useIsDesktop = () => {
 	return isDesktop;
 };
 
-const NavBar = ({ handleYear }) => {
-	const [active, setActive] = useState('fourteen');
+const NavBar = ({
+  handleYear
+} : {
+  handleYear: (year: string) => unknown
+}) => {
+	const [active, setActive] = useState<string>('fourteen');
 	const isDesktop = useIsDesktop();
 
 	return (
