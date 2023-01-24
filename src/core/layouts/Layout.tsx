@@ -77,7 +77,6 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({ t
         monthTitle={monthTitle}
         handleMonth={handleMonth}
         year={year}
-        handleYear={handleYear}
       />
         {children}
        <Footer />
