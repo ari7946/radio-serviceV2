@@ -13,7 +13,7 @@ const AudioPlayer = ({ audioFile, isFromSoundCloud } : AudioPlayerProps) => {
   const [loading, setLoading] = useState(true);
 
   React.useEffect(() => {
-    setLoading(false);
+      setLoading(false);
   }, [loading])
 
   return (
@@ -28,7 +28,7 @@ const AudioPlayer = ({ audioFile, isFromSoundCloud } : AudioPlayerProps) => {
 				onCanPlayThrough={loading && handleOnCanPlay}
 			/> */}
 
-      {!loading && (
+      {!loading ? (
         <ReactPlayer
           url={audioFile}
           className={styles.audioPlayer}
@@ -36,6 +36,8 @@ const AudioPlayer = ({ audioFile, isFromSoundCloud } : AudioPlayerProps) => {
           height={isFromSoundCloud ? 130 : 100}
           width="100%"
         />
+      ) : (
+        <div className={styles.spinner} />
       )}
     </div>
   )

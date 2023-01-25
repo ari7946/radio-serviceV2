@@ -15,11 +15,6 @@
 	min-height: 25rem;
 	width: 100%;
 
-  .top-container {
-    // display: flex;
-    // justify-content: space-between;
-  }
-
 	@media all and (max-width: 1313px) {
 		height: 20rem;
 	}
@@ -30,6 +25,7 @@
 
 	@media all and (max-width: 600px) {
 		height: 15rem;
+    background-position: center bottom;
 	}
 
 	.header-title {
