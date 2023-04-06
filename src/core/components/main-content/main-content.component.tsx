@@ -54,8 +54,8 @@ const MainContent = ({
 	}, [activeMonthSixteen, activeMonthFifteen, activeMonthFourteen, year]);
 
 	return (
-		<section className={styles.mainWrapper}>
-      <div className={styles.monthListWrapper}>
+		<main className={styles.mainWrapper}>
+      <aside className={styles.monthListWrapper}>
         {firstHalf.length && (
           <MonthList
             allMonths={firstHalf}
@@ -75,14 +75,14 @@ const MainContent = ({
             activeMonth={activeMonth}
           />
         )}
-      </div>
+      </aside>
 
-      <div className={styles.playerListWrapper}>
+      <section className={styles.playerListWrapper}>
         <PlayerList
           audioData={audioData}
         />
-      </div>
-		</section>
+      </section>
+		</main>
 	);
 };
 
