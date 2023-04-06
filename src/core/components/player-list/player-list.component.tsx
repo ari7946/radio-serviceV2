@@ -8,9 +8,10 @@ interface PlayerListProps {
 }
 
 const PlayerList = ({ audioData }: PlayerListProps) => {
+  const firstPlayerTitle = audioData[0]?.audioTitle;
   const [isActive, setIsActive] = React.useState('');
 
-  const handleSetActive = (activePlayer) => {
+  const handleSetActive = (activePlayer: string) => {
     setIsActive(activePlayer)
   }
 
@@ -24,6 +25,7 @@ const PlayerList = ({ audioData }: PlayerListProps) => {
             isFromSoundCloud={audio.isFromSoundCloud}
             isActive={isActive}
             handleSetActive={handleSetActive}
+            audioTitle={audio.audioTitle}
           />
 				</article>
 			))}

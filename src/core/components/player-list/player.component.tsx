@@ -8,18 +8,20 @@ import Button from "../button/button.component"
 interface AudioPlayerProps {
   audioFile: string,
   isFromSoundCloud: boolean | undefined,
+  isActive: string,
+  handleSetActive: (player: string) => any,
+  audioTitle: string
 }
 
-const AudioPlayer = ({ audioFile, isFromSoundCloud } : AudioPlayerProps) => {
+const AudioPlayer = ({ audioFile, isFromSoundCloud, audioTitle, isActive, handleSetActive } : AudioPlayerProps) => {
   const [loading, setLoading] = useState(true);
-  const [isActive, setIsActive] = useState(true)
 
   React.useEffect(() => {
       setLoading(false);
   }, [loading])
 
-  if (isActive) {
-    return <Button title="test" />
+  if (isActive !== audioTitle) {
+    return <Button audioTitle={audioTitle} handleSetActive={handleSetActive} />
   }
 
   return (
