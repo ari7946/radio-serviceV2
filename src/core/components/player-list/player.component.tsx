@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import ReactPlayer from "react-player/lazy"
 import styles from "./player-list.module.scss"
 import { AudioData } from "src/core/types/types"
+import Button from "../button/button.component"
 
 interface AudioPlayerProps {
   audioFile: string,
@@ -11,10 +12,15 @@ interface AudioPlayerProps {
 
 const AudioPlayer = ({ audioFile, isFromSoundCloud } : AudioPlayerProps) => {
   const [loading, setLoading] = useState(true);
+  const [isActive, setIsActive] = useState(true)
 
   React.useEffect(() => {
       setLoading(false);
   }, [loading])
+
+  if (isActive) {
+    return <Button title="test" />
+  }
 
   return (
     <div className={styles.playerWrapper}>
