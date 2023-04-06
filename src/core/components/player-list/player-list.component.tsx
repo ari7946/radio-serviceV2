@@ -8,18 +8,18 @@ interface PlayerListProps {
 }
 
 const PlayerList = ({ audioData }: PlayerListProps) => {
-  const firstPlayerTitle = audioData[0]?.audioTitle;
-  const [isActive, setIsActive] = React.useState('');
+  const firstPlayer = audioData[0]?.audioTitle
+  const [isActive, setIsActive] = React.useState(firstPlayer || '');
 
   const handleSetActive = (activePlayer: string) => {
     setIsActive(activePlayer)
   }
 
 	return (
-		<main className={styles.playerWrapper}>
+		<div className={styles.playerWrapper}>
 			{audioData.map((audio) => (
 				<article key={audio.audioFile} className={styles.playerArticle}>
-					<h2 className={styles.audioTitle}>{audio.audioTitle}</h2>
+					{/* <h2 className={styles.audioTitle}>{audio.audioTitle}</h2> */}
           <AudioPlayer
             audioFile={audio.audioFile}
             isFromSoundCloud={audio.isFromSoundCloud}
@@ -29,7 +29,7 @@ const PlayerList = ({ audioData }: PlayerListProps) => {
           />
 				</article>
 			))}
-		</main>
+		</div>
 	);
 };
 

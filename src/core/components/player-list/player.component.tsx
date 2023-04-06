@@ -26,16 +26,6 @@ const AudioPlayer = ({ audioFile, isFromSoundCloud, audioTitle, isActive, handle
 
   return (
     <div className={styles.playerWrapper}>
-      {/* {loading && <span className={styles.spinner} />} */}
-      {/* <ReactAudioPlayer
-				className={styles.audioPlayer}
-				src={audioFile}
-				autoplay
-				controls
-				onCanPlay={handleOnCanPlay}
-				onCanPlayThrough={loading && handleOnCanPlay}
-			/> */}
-
       {!loading ? (
         <ReactPlayer
           url={audioFile}

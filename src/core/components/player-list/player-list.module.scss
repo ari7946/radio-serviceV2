@@ -1,16 +1,16 @@
 .player-wrapper {
-
 	margin: 0 auto;
-	min-width: 500px;
+  display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
   .player-article:not(:first-child) {
     margin-top: 3rem;
   }
 
 	@media all and (max-width: 1313px) {
-		flex-direction: column;
-		justify-content: space-around;
 		margin: 0 auto;
 		align-items: center;
 		min-width: 500px;
@@ -27,7 +27,7 @@
 	}
 
 	.audio-player {
-		margin: 0 auto;
+		margin: 1rem auto;
 		padding: 0 0.3rem;
     width: 100%;
 	}
@@ -47,7 +47,7 @@
 			margin-bottom: .5rem;
 			padding-bottom: 0.3rem;
 			letter-spacing: 2px;
-		font-size: 1.2rem;
+		  font-size: 1.2rem;
 
 			&:first-child {
 				padding-top: -0.3rem;

@@ -18,7 +18,7 @@ const MonthList = ({
 	activeMonth,
 }: MonthListProps) => {
 	return (
-		<aside className={styles.monthsWrapper}>
+		<div className={styles.monthsWrapper}>
 			{allMonths.map((month) => (
 				<Month
 					month={month}
@@ -29,7 +29,7 @@ const MonthList = ({
 					key={`${month}/${year}`}
 				/>
 			))}
-		</aside>
+		</div>
 	);
 };
 
