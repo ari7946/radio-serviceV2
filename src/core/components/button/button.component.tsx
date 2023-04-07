@@ -16,7 +16,7 @@ const Button = ({
       className={styles.button}
       onClick={() => handleSetActive(audioTitle)}
     >
-      <span className={styles.buttonText}>{audioTitle}</span>
+      <span className={styles.buttonText}>Escucha {audioTitle}</span>
       <AiOutlineDoubleRight className={styles.icon} />
     </button>
   )
