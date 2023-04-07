@@ -9,6 +9,21 @@ interface MonthProps {
   year: string;
 }
 
+const transformData = {
+  enero: '1 - 4',
+  febrero: "5 - 8",
+  marzo: '9 - 13',
+  abril: '14 - 17',
+  mayo: '18 - 21',
+  junio: '22',
+  julio: '23',
+  agosto: '24 - 28',
+  septiembre: '29 - 30',
+  octubre: '31 - 34',
+  noviembre: '35 - 39',
+  diciembre: '40'
+}
+
 const Month = ({
 	month,
 	handleMonth,
@@ -30,7 +45,7 @@ const Month = ({
       `}
 			disabled={shouldDisable}
 		>
-			{month}
+			Eps. {transformData[month]}
 		</button>
 	);
 };

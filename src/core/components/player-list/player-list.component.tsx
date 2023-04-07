@@ -8,7 +8,7 @@ interface PlayerListProps {
 }
 
 const PlayerList = ({ audioData }: PlayerListProps) => {
-  const firstPlayer = audioData[0]?.audioTitle
+  const firstPlayer = audioData && audioData[0]?.audioTitle;
   const [isActive, setIsActive] = React.useState(firstPlayer || '');
 
   const handleSetActive = (activePlayer: string) => {
@@ -22,7 +22,6 @@ const PlayerList = ({ audioData }: PlayerListProps) => {
 					{/* <h2 className={styles.audioTitle}>{audio.audioTitle}</h2> */}
           <AudioPlayer
             audioFile={audio.audioFile}
-            isFromSoundCloud={audio.isFromSoundCloud}
             isActive={isActive}
             handleSetActive={handleSetActive}
             audioTitle={audio.audioTitle}
