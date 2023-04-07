@@ -6,14 +6,11 @@ import Header from '../components/header/header.component';
 import Footer from '../components/footer/footer.component';
 import MainContent from '../components/main-content/main-content.component';
 import styles from './layout.module.scss';
-import { getData } from '../components/data/data';
 import { useRouter } from 'next/router';
 import { AudioData } from '../types/types'
 
-const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({ title, children }) => {
-  const data = getData('spanish');
+const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode, data: any }> = ({ title, children, data }) => {
   const router = useRouter();
-
 
   const initialAudioData = data?.fourteen?.monthsData?.enero?.audioData as AudioData[];
   const initialAllMonths = data?.fourteen?.allMonths as string[];
