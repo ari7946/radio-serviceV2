@@ -16,7 +16,7 @@
 	width: 100%;
 
 	@media all and (max-width: 1313px) {
-		height: 20rem;
+		height: 25rem;
 	}
 
 	@media all and (max-width: 800px) {
@@ -30,9 +30,10 @@
 
 	.header-title {
 		color: black;
-		font-family: sans-serif;
+		font-family: Oswald, Roboto, Poppins, 'Arial';
+    letter-spacing: 5px;
 		margin-top: 0;
-		font-size: 50px;
+		font-size: 55px;
 		padding-top: 2rem;
 		color: rgba(0, 0, 0, 0.8);
 		text-shadow: 2px 2px 5px #FFFEE1;
@@ -52,6 +53,7 @@
 		@media all and (max-width: 400px) {
 			font-weight: bolder;
 			padding-top: 1rem;
+      letter-spacing: 3px;
 		}
 	}
 }
